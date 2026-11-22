@@ -3,195 +3,606 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cavalry Dental Care | Best Dental & Aesthetic Clinic</title>
+    <meta name="description" content="Cavalry Dental & Aesthetic Care — Premier multi-branch dental and facial aesthetic clinic in Cavalry Ground and DHA Phase 6, Lahore. Open daily till 10:00 PM.">
+    <title>Cavalry Dental & Aesthetic Care | Luxury Dental & Skin Studio Lahore</title>
     
-    <!-- Google Fonts (Poppins) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Link to CSS File -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- DEMO BANNER -->
-    <div class="demo-banner">
-        <i class="fas fa-exclamation-triangle"></i> DEMO WEBSITE - Created for Cavalry Dental Care
-    </div>
+    <!-- Minimal Sticky Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#home" class="brand-logo" aria-label="Cavalry Dental & Aesthetic Care Home">
+                <span class="brand-monogram">C</span>
+                <div class="brand-text">
+                    <span class="brand-name">Cavalry</span>
+                    <span class="brand-sub">Dental &amp; Aesthetic Care</span>
+                </div>
+            </a>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <i class="fas fa-tooth"></i> Cavalry Dental Care
-        </div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#packages">Packages</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <a href="tel:+923140777071" class="nav-btn">Call Now</a>
-    </nav>
+            <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+                <a href="#treatments" class="nav-link">Treatments</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#reviews" class="nav-link">Patient Reviews</a>
+                <a href="#clinics" class="nav-link">Clinics</a>
+                <button type="button" class="btn btn-gold mobile-only-cta" data-open-booking>Book Appointment</button>
+            </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Your Smile, <br><span>Our Passion.</span></h1>
-            <p>Experience world-class dental and aesthetic care with a gentle touch. We are committed to giving you the healthy, beautiful smile you deserve.</p>
-            <div class="hero-btns">
-                <a href="https://wa.me/923140777071" class="btn-primary"><i class="fab fa-whatsapp"></i> Book Appointment</a>
-                <a href="#services" class="btn-secondary">Our Services</a>
+            <div class="header-actions">
+                <button type="button" class="btn btn-gold header-cta" data-open-booking>Book Appointment</button>
+                <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dental Care">
-        </div>
-    </section>
+    </header>
 
-    <!-- Stats Section -->
-    <div class="stats">
-        <div class="stat-item">
-            <h3>4.9 ⭐</h3>
-            <p>Google Rating</p>
-        </div>
-        <div class="stat-item">
-            <h3>189+</h3>
-            <p>Happy Patients</p>
-        </div>
-        <div class="stat-item">
-            <h3>10 PM</h3>
-            <p>Open Till Late</p>
-        </div>
-    </div>
+    <main>
+        <!-- Editorial Split Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="trust-pill">
+                        <span class="stars-inline" aria-hidden="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span><strong>4.9★ Google Rating</strong> (189+ Verified Patients)</span>
+                    </div>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Dental & Aesthetic Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-tooth"></i>
-                <h3>Teeth Whitening</h3>
-                <p>Get a brighter, whiter smile with our safe and advanced whitening treatments.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-teeth"></i>
-                <h3>Root Canal</h3>
-                <p>Painless root canal treatments to save your natural teeth and relieve pain.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-smile"></i>
-                <h3>Braces & Aligners</h3>
-                <p>Straighten your teeth discreetly and comfortably with modern aligners.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-spa"></i>
-                <h3>HydraFacial</h3>
-                <p>Deep cleansing and rejuvenating facial treatment for glowing, healthy skin.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-magic"></i>
-                <h3>Laser Hair Removal</h3>
-                <p>Advanced and safe laser treatment for permanent hair reduction.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-ring"></i>
-                <h3>Bridal Packages</h3>
-                <p>Complete beauty and smile makeover packages for your special day.</p>
-            </div>
-        </div>
-    </section>
+                    <h1 class="hero-title">
+                        Precision Dentistry &amp; <br>
+                        <em>Bespoke Aesthetic Care.</em>
+                    </h1>
 
-    <!-- New Packages Section -->
-    <section class="packages" id="packages">
-        <h2>Special Packages</h2>
-        <div class="packages-grid">
-            <div class="package-card">
-                <h3>Scaling & Polishing</h3>
-                <p class="price">Rs. 4,499</p>
-            </div>
-            <div class="package-card">
-                <h3>Teeth Whitening</h3>
-                <p class="price">Rs. 14,999</p>
-            </div>
-            <div class="package-card">
-                <h3>HydraFacial</h3>
-                <p class="price">Starts from Rs. 4,500</p>
-            </div>
-            <div class="package-card">
-                <h3>Bridal Packages</h3>
-                <p class="price">Customizable</p>
-            </div>
-        </div>
-    </section>
+                    <p class="hero-lead">
+                        An elevated clinical sanctuary in Lahore dedicated to painless restorative dentistry, radiant smile design, and medical-grade facial rejuvenation—crafted around your comfort and schedule.
+                    </p>
 
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <h2>What Our Patients Say</h2>
-        <div class="review-card">
-            <div class="stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="review-text">"Thorough examination and guided me about hygiene and overall tooth health. Highly recommended!"</p>
-            <p class="reviewer">- Google Review</p>
-        </div>
-    </section>
+                    <div class="hero-cta-group">
+                        <button type="button" class="btn btn-navy btn-lg" data-open-booking>
+                            <i class="far fa-calendar-check"></i> Book Appointment
+                        </button>
+                        <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20speak%20with%20your%20concierge." target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-lg">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Concierge
+                        </a>
+                    </div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Visit Our Clinics</h2>
-        <div class="contact-info">
-            <!-- Branch 1 -->
-            <div class="contact-item branch-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <h4 style="margin-bottom: 5px;">Branch 1</h4>
-                    <span>Cantt Board Plaza No. 2, Jinnah Flyover Service Lane, Cavalry Ground, Lahore.</span>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="far fa-clock"></i>
+                            <div>
+                                <strong>Open Daily Till 10:00 PM</strong>
+                                <span>Evening &amp; weekend appointments available</span>
+                            </div>
+                        </div>
+                        <div class="highlight-divider"></div>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-pin"></i>
+                            <div>
+                                <strong>2 Lahore Studios</strong>
+                                <span>Cavalry Ground &amp; DHA Phase 6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85" alt="Modern luxury dental and aesthetic suite at Cavalry Dental & Aesthetic Care Lahore" loading="eager">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            <strong>100% Sterile Protocol</strong>
+                            <span>International clinical hygiene standards</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Branch 2 -->
-            <div class="contact-item branch-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <h4 style="margin-bottom: 5px;">Branch 2</h4>
-                    <span>5MB, Second Floor, Main Boulevard, DHA Phase 6, Lahore.</span>
+        </section>
+
+        <!-- Filterable Treatments Menu -->
+        <section class="treatments-section" id="treatments">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-eyebrow">Clinical &amp; Aesthetic Menu</span>
+                    <h2 class="section-title">Curated Treatments for Smile &amp; Skin</h2>
+                    <p class="section-subtitle">Select a discipline below to explore our specialist procedures and connect directly with our patient concierge.</p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="filter-tabs" role="tablist" aria-label="Treatment Categories">
+                    <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Services</button>
+                    <button type="button" class="filter-tab" data-filter="dental" role="tab" aria-selected="false">Dental Care</button>
+                    <button type="button" class="filter-tab" data-filter="aesthetic" role="tab" aria-selected="false">Aesthetic &amp; Skin</button>
+                </div>
+
+                <!-- Treatments Grid -->
+                <div class="treatments-grid" id="treatmentsGrid">
+                    <!-- 1. Teeth Whitening -->
+                    <article class="treatment-card" data-category="dental">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag">Dental Care</span>
+ <div class="treatment-icon"><i class="fas fa-star"></i></div>                  
+     </div>
+                        <h3>Teeth Whitening</h3>
+                        <p>Enamel-safe, high-efficacy laser whitening engineered to lift deep discoloration up to 8 shades in a single comfortable session.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20Teeth%20Whitening." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 2. Painless Root Canal -->
+                    <article class="treatment-card" data-category="dental">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag">Dental Care</span>
+                            <div class="treatment-icon"><i class="fas fa-tooth"></i></div>
+                        </div>
+                        <h3>Painless Root Canal</h3>
+                        <p>Precision rotary endodontics paired with gentle local anesthesia to preserve your natural tooth structure with zero discomfort.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20Painless%20Root%20Canal%20treatment." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 3. Braces & Aligners -->
+                    <article class="treatment-card" data-category="dental">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag">Dental Care</span>
+                            <div class="treatment-icon"><i class="fas fa-smile-beam"></i></div>
+                        </div>
+                        <h3>Braces &amp; Aligners</h3>
+                        <p>Discreet clear aligners and modern self-ligating orthodontic systems custom-mapped for balanced facial symmetry and bite harmony.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20Braces%20%26%20Clear%20Aligners." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 4. HydraFacial -->
+                    <article class="treatment-card" data-category="aesthetic">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag tag-aesthetic">Aesthetic &amp; Skin</span>
+                            <div class="treatment-icon"><i class="fas fa-spa"></i></div>
+                        </div>
+                        <h3>HydraFacial</h3>
+                        <p>Multi-step vortex hydro-dermabrasion, painless extraction, and antioxidant peptide infusion for immediate glass-skin luminosity.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20HydraFacial." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 5. Laser Hair Removal -->
+                    <article class="treatment-card" data-category="aesthetic">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag tag-aesthetic">Aesthetic &amp; Skin</span>
+                            <div class="treatment-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        </div>
+                        <h3>Laser Hair Removal</h3>
+                        <p>FDA-cleared, cooling-tip diode laser technology calibrated safely for South Asian skin tones for lasting, silky-smooth results.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20Laser%20Hair%20Removal." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 6. Bridal Smile & Skin Makeovers -->
+                    <article class="treatment-card" data-category="aesthetic">
+                        <div class="treatment-card-top">
+                            <span class="treatment-tag tag-aesthetic">Signature Bridal</span>
+                            <div class="treatment-icon"><i class="fas fa-gem"></i></div>
+                        </div>
+                        <h3>Bridal Smile &amp; Skin Makeovers</h3>
+                        <p>Comprehensive pre-wedding timelines combining smile brightening, contouring, and medical facials so you glow effortlessly on your big day.</p>
+                        <div class="treatment-card-footer">
+                            <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20inquire%20about%20Bridal%20Smile%20%26%20Skin%20Makeovers." target="_blank" rel="noopener noreferrer" class="inquire-link">
+                                <i class="fab fa-whatsapp"></i> Inquire on WhatsApp <i class="fas fa-arrow-right arrow-icon"></i>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <!-- Email & Phone -->
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>cavalrydentalcare@gmail.com</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <span>+92 314 0777071</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-clock"></i>
-                <span>Open Daily · Closes 10 PM</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://wa.me/923140777071" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <!-- Signature Care Packages -->
+        <section class="packages-section" id="packages">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-eyebrow">Transparent Privileges</span>
+                    <h2 class="section-title">Signature Care Packages</h2>
+                    <p class="section-subtitle">Thoughtfully bundled clinical and aesthetic essentials with clear, upfront pricing and zero hidden charges.</p>
+                </div>
+
+                <div class="packages-grid">
+                    <!-- Package 1 -->
+                    <div class="package-card">
+                        <div class="package-badge">Preventive Care</div>
+                        <h3>Scaling &amp; Polishing</h3>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span> 4,499
+                        </div>
+                        <p class="package-desc">Complete ultrasonic plaque &amp; tartar removal followed by diamond-paste enamel polishing and full oral health screening.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Ultrasonic Deep Scaling</li>
+                            <li><i class="fas fa-check"></i> Stain Removal &amp; Micro-Polishing</li>
+                            <li><i class="fas fa-check"></i> Specialist Doctor Consultation</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-navy btn-block" data-open-booking data-treatment="Scaling & Polishing (Rs. 4,499)">Reserve Package</button>
+                    </div>
+
+                    <!-- Package 2 (Featured) -->
+                    <div class="package-card featured">
+                        <div class="package-badge badge-gold">Most Requested</div>
+                        <h3>Laser Teeth Whitening</h3>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span> 14,999
+                        </div>
+                        <p class="package-desc">Clinical-grade photo-activated whitening treatment designed for instant, sensitivity-free brilliance before major events.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Full-Arch Laser Whitening</li>
+                            <li><i class="fas fa-check"></i> Gum Barrier &amp; Desensitizing Care</li>
+                            <li><i class="fas fa-check"></i> Post-Care Shade Maintenance Guide</li>
+                        </ul>
+                        <button type="button" class="btn btn-gold btn-block" data-open-booking data-treatment="Laser Teeth Whitening (Rs. 14,999)">Reserve Package</button>
+                    </div>
+
+                    <!-- Package 3 -->
+                    <div class="package-card">
+                        <div class="package-badge">Skin Rejuvenation</div>
+                        <h3>Signature HydraFacial</h3>
+                        <div class="package-price">
+                            <span class="currency">From Rs.</span> 4,500
+                        </div>
+                        <p class="package-desc">Deep pore detoxification, gentle acid peel, painless vacuum extraction, and hyaluronic hydration tailored to your skin type.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Multi-Stage Vortex Cleansing</li>
+                            <li><i class="fas fa-check"></i> Custom Booster Serum Infusion</li>
+                            <li><i class="fas fa-check"></i> LED Light Therapy Finish</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-navy btn-block" data-open-booking data-treatment="Signature HydraFacial (From Rs. 4,500)">Reserve Package</button>
+                    </div>
+                </div>
+
+                <!-- Bespoke Bridal Banner -->
+                <div class="bridal-banner">
+                    <div class="bridal-banner-content">
+                        <span class="bridal-tag"><i class="fas fa-crown"></i> Bespoke Concierge Experience</span>
+                        <h3>Custom Bridal Smile &amp; Glow Package</h3>
+                        <p>Planning your wedding in Lahore? Our dental and aesthetic specialists curate a personalized 2-to-8 week transformation plan combining smile whitening, composite bonding, laser sessions, and signature facials.</p>
+                    </div>
+                    <div class="bridal-banner-action">
+                        <button type="button" class="btn btn-gold btn-lg" data-open-booking data-treatment="Custom Bridal Smile & Glow Package">
+                            Design Bridal Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verified Patient Testimonials -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header centered light">
+                    <span class="section-eyebrow">4.9★ Across 189+ Google Reviews</span>
+                    <h2 class="section-title">Trusted by Discerning Patients</h2>
+                    <p class="section-subtitle">Real experiences from families and individuals visiting our Cavalry Ground and DHA Phase 6 clinics.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-stars" aria-label="5 out of 5 stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Google Review</span>
+                        </div>
+                        <p class="review-quote">"Thorough examination and guided me clearly about hygiene and overall tooth health. Everything was explained transparently before starting any procedure. Highly recommended!"</p>
+                        <div class="review-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <strong>Ayesha Tariq</strong>
+                                <span>Cavalry Ground Branch · Preventive &amp; Whitening</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-stars" aria-label="5 out of 5 stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Google Review</span>
+                        </div>
+                        <p class="review-quote">"I was extremely nervous about getting a root canal, but the doctor made the entire process completely painless. The clinic's cleanliness and calm ambiance feel like a five-star studio."</p>
+                        <div class="review-author">
+                            <div class="author-avatar">U</div>
+                            <div>
+                                <strong>Usman Khalid</strong>
+                                <span>DHA Phase 6 Branch · Painless Root Canal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-stars" aria-label="5 out of 5 stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Google Review</span>
+                        </div>
+                        <p class="review-quote">"Booked my pre-wedding HydraFacial and teeth polishing here. Being open till 10 PM made it so convenient after work, and the results were visible right after my first session."</p>
+                        <div class="review-author">
+                            <div class="author-avatar">M</div>
+                            <div>
+                                <strong>Mahnoor Sheikh</strong>
+                                <span>DHA Phase 6 Branch · Bridal Glow &amp; Dental</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multi-Branch Clinics & Concierge Section -->
+        <section class="clinics-section" id="clinics">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-eyebrow">Lahore Locations</span>
+                    <h2 class="section-title">Visit Our Clinical Studios</h2>
+                    <p class="section-subtitle">Two convenient, state-of-the-art destinations in Lahore—open seven days a week until 10:00 PM.</p>
+                </div>
+
+                <div class="branches-grid">
+                    <!-- Branch 1: Cavalry Ground -->
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <span class="branch-tag">Flagship Studio · Branch 01</span>
+                            <h3>Cavalry Ground, Lahore</h3>
+                        </div>
+                        <ul class="branch-details">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Cantt Board Plaza No. 2, Jinnah Flyover Service Lane, Cavalry Ground, Lahore.</span>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                <span>Open Daily · Closes 10:00 PM</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+923140777071">+92 314 0777071</a>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:cavalrydentalcare@gmail.com">cavalrydentalcare@gmail.com</a>
+                            </li>
+                        </ul>
+                        <div class="branch-actions">
+                            <button type="button" class="btn btn-navy" data-open-booking data-branch="Cavalry Ground">Book This Branch</button>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Cantt+Board+Plaza+No.+2+Jinnah+Flyover+Service+Lane+Cavalry+Ground+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+                                <i class="fas fa-directions"></i> Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Branch 2: DHA Phase 6 -->
+                    <div class="branch-card">
+                        <div class="branch-header">
+                            <span class="branch-tag">DHA Studio · Branch 02</span>
+                            <h3>DHA Phase 6, Lahore</h3>
+                        </div>
+                        <ul class="branch-details">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>5MB, Second Floor, Main Boulevard, DHA Phase 6, Lahore.</span>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                <span>Open Daily · Closes 10:00 PM</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+923140777071">+92 314 0777071</a>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:cavalrydentalcare@gmail.com">cavalrydentalcare@gmail.com</a>
+                            </li>
+                        </ul>
+                        <div class="branch-actions">
+                            <button type="button" class="btn btn-navy" data-open-booking data-branch="DHA Phase 6">Book This Branch</button>
+                            <a href="https://www.google.com/maps/search/?api=1&query=5MB+Second+Floor+Main+Boulevard+DHA+Phase+6+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+                                <i class="fas fa-directions"></i> Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Concierge Bar -->
+                <div class="concierge-bar">
+                    <div class="concierge-info">
+                        <h4>Need Immediate Assistance or Emergency Dental Care?</h4>
+                        <p>Speak directly with our clinical coordinator via phone, email, or WhatsApp.</p>
+                    </div>
+                    <div class="concierge-links">
+                        <a href="tel:+923140777071" class="concierge-pill">
+                            <i class="fas fa-phone-alt"></i> +92 314 0777071
+                        </a>
+                        <a href="mailto:cavalrydentalcare@gmail.com" class="concierge-pill">
+                            <i class="far fa-envelope"></i> cavalrydentalcare@gmail.com
+                        </a>
+                        <a href="https://wa.me/923140777071" target="_blank" rel="noopener noreferrer" class="concierge-pill whatsapp-pill">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Desk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo footer-logo">
+                    <span class="brand-monogram">C</span>
+                    <div class="brand-text">
+                        <span class="brand-name">Cavalry</span>
+                        <span class="brand-sub">Dental &amp; Aesthetic Care</span>
+                    </div>
+                </a>
+                <p>Refined clinical dentistry and medical aesthetics in Cavalry Ground and DHA Phase 6, Lahore. Dedicated to painless precision, strict sterilization, and natural results.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="#treatments">Treatments Menu</a></li>
+                    <li><a href="#packages">Care Packages</a></li>
+                    <li><a href="#reviews">Patient Reviews</a></li>
+                    <li><a href="#clinics">Lahore Clinics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h5>Direct Concierge</h5>
+                <ul>
+                    <li><a href="https://wa.me/923140777071" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp: +92 314 0777071</a></li>
+                    <li><a href="tel:+923140777071"><i class="fas fa-phone-alt"></i> Call: +92 314 0777071</a></li>
+                    <li><a href="mailto:cavalrydentalcare@gmail.com"><i class="far fa-envelope"></i> cavalrydentalcare@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h5>Directions</h5>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Cantt+Board+Plaza+No.+2+Jinnah+Flyover+Service+Lane+Cavalry+Ground+Lahore" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Cavalry Ground Map</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=5MB+Second+Floor+Main+Boulevard+DHA+Phase+6+Lahore" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> DHA Phase 6 Map</a></li>
+                    <li><span><i class="far fa-clock"></i> Open Daily · Closes 10:00 PM</span></li>
+                </ul>
+            </div>
         </div>
-        <p>&copy; 2026 Cavalry Dental Care. All Rights Reserved.</p>
-        <p style="font-size: 12px; margin-top: 5px; color: #94a3b8;">Demo Designed for Client Approval</p>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Cavalry Dental &amp; Aesthetic Care. All Rights Reserved.</p>
+            <div class="footer-quick-actions">
+                <a href="https://wa.me/923140777071" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Concierge"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:cavalrydentalcare@gmail.com" aria-label="Email Cavalry Dental & Aesthetic Care"><i class="far fa-envelope"></i></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Cavalry+Dental+Care+Lahore" target="_blank" rel="noopener noreferrer" aria-label="Find on Google Maps"><i class="fas fa-map-marked-alt"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923140777071" class="whatsapp-float" target="_blank">
+    <!-- Floating WhatsApp Concierge Button -->
+    <a href="https://wa.me/923140777071?text=Hello%20Cavalry%20Dental%20%26%20Aesthetic%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Link to JS File -->
+    <!-- Interactive Appointment Booking Modal -->
+    <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-dialog">
+            <button type="button" class="modal-close" id="closeBookingModal" aria-label="Close Appointment Window">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="section-eyebrow">Private Concierge</span>
+                <h3 id="modalTitle">Schedule Your Visit</h3>
+                <p>Select your preferred Lahore studio, treatment, and time slot to send an instant booking request via WhatsApp.</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="patientName">Patient Full Name</label>
+                    <input type="text" id="patientName" name="patientName" placeholder="e.g., Sarah Ahmed" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="branchSelect">Preferred Branch</label>
+                        <select id="branchSelect" name="branch" required>
+                            <option value="Cavalry Ground">Cavalry Ground (Cantt Board Plaza)</option>
+                            <option value="DHA Phase 6">DHA Phase 6 (Main Boulevard)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="treatmentSelect">Treatment / Package</label>
+                        <select id="treatmentSelect" name="treatment" required>
+                            <option value="General Dental Consultation">General Dental Consultation</option>
+                            <option value="Teeth Whitening">Teeth Whitening</option>
+                            <option value="Painless Root Canal">Painless Root Canal</option>
+                            <option value="Braces & Aligners">Braces &amp; Aligners</option>
+                            <option value="HydraFacial">HydraFacial</option>
+                            <option value="Laser Hair Removal">Laser Hair Removal</option>
+                            <option value="Bridal Smile & Skin Makeovers">Bridal Smile &amp; Skin Makeovers</option>
+                            <option value="Scaling & Polishing (Rs. 4,499)">Package: Scaling &amp; Polishing (Rs. 4,499)</option>
+                            <option value="Laser Teeth Whitening (Rs. 14,999)">Package: Laser Teeth Whitening (Rs. 14,999)</option>
+                            <option value="Signature HydraFacial (From Rs. 4,500)">Package: Signature HydraFacial (From Rs. 4,500)</option>
+                            <option value="Custom Bridal Smile & Glow Package">Package: Custom Bridal Smile &amp; Glow</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time Slot</label>
+                        <select id="preferredTime" name="preferredTime" required>
+                            <option value="12:00 PM – 02:00 PM">12:00 PM – 02:00 PM (Afternoon)</option>
+                            <option value="02:00 PM – 05:00 PM">02:00 PM – 05:00 PM (Late Afternoon)</option>
+                            <option value="05:00 PM – 08:00 PM" selected>05:00 PM – 08:00 PM (Evening)</option>
+                            <option value="08:00 PM – 10:00 PM">08:00 PM – 10:00 PM (Late Evening)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="patientNotes">Additional Notes (Optional)</label>
+                    <input type="text" id="patientNotes" name="patientNotes" placeholder="Any specific concern or doctor preference">
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-lg btn-block">
+                    <i class="fab fa-whatsapp"></i> Confirm via WhatsApp Concierge
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
